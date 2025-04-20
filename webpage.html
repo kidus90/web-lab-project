@@ -13,7 +13,7 @@
             <li><a href="#About_page">About</a></li>
             <li><a href="#Contact_page">Contact</a></li>
         </ul>
-        <div class="hamburger">
+        <div class="hamburger">  
             <div class="line1"></div>
             <div class="line2"></div>
             <div class="line3"></div>
@@ -26,6 +26,41 @@
         <p>I can help you build a product, feature or website Look through some of my work and
             experience! If you like what you see and have a project you need coded,
             don't hesitate to contact me.</p>
+        </div>
+        <div class="overlay" id="overlay"></div>
+        <div class="modal" id="modal">
+            <button onclick="closeModal()">Close</button>
+            <div>
+                <img src="img/home_detail.png" alt="img" style="width: 872px; height: 616px;">
+                <div style="display: flex; justify-content: space-between;">
+                    <div>
+                        <h1>Keeping track of hundreds of <br> components</h1>
+                    </div>
+                    <div>
+                        <button>See live</button>
+                        <button>See Source</button>
+                    </div>
+                </div>
+                <div style="display: flex; gap: 8px;">
+                    <p style="display: flex; background: transparent; border: 1px solid black">Codekit</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black">Github</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black">JavaScript</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black">Bootstrap</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black">Terminal</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black">Codepen</p>
+                </div>
+                <div>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it 1960s with the 
+                        releaLorem Ipsum is simply dummy text of the printing and typesetting industry. 
+                        Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
+                        when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
+                </div>
+            </div>
+        </div>
+        <div>
+            <button onclick="openModal()">Open</button>
         </div>
 
     <div class="Recent_work">
@@ -246,6 +281,15 @@
                 navLinks.classList.remove('active');
             }
         });
+
+        function openModal() {
+      document.getElementById("modal").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    };
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
     </script>
 </body>
 </html>
