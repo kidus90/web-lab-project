@@ -53,7 +53,7 @@
     justify-content: center;
     height: 100vh;
     text-align: center;
-    background: url(home_img.jpg);
+    background: url(../img/home_img.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -369,7 +369,7 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    width: 1171px;
+    width: 1420px;
     height: 490px;
 
 }
