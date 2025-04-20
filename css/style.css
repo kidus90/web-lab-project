@@ -59,9 +59,12 @@
 }
 .home-text_1{
     color: #172B4D;
+    background: transparent;
+
 }
 .home-text_2{
     color: #36B37E;
+    background: transparent;
 }
 #home-text_title{
     font-family: Inter;
