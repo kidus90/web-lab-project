@@ -56,7 +56,7 @@
                     </div>
                 </div>
                 <div style="display: flex; gap: 8px;">
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Codekit</p>
+                    <p class="box_place">Codekit</p>
                     <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Github</p>
                     <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">JavaScript</p>
                     <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Bootstrap</p>
@@ -272,36 +272,17 @@
         </div>
     </div>
     <br><br>
+    <hr>
+    <br>
+    <footer>
+        <div class="icons">
+            <a href=""><img src="img/icons/github_img.png" alt="GitHub"></a>
+            <a href=""><img src="img/icons/linkdn_img.png" alt="LinkedIn"></a>
+            <a href=""><img src="img/icons/peace_img.png" alt="Peace"></a>
+            <a href=""><img src="img/icons/twitter_img.png" alt="twitter"></a>
+            <a href=""><img src="img/icons/M_img.png" alt="M"></a>
+        </div>
+    </footer>
 </section>
-
-
-
-
-    <script>
-        const hamburger = document.querySelector('.hamburger');
-        const navLinks = document.querySelector('.nav-links');
-
-        hamburger.addEventListener('click', () => {
-            hamburger.classList.toggle('active');
-            navLinks.classList.toggle('active');
-        });
-
-        // Close menu when clicking outside on mobile
-        document.addEventListener('click', (e) => {
-            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
-                hamburger.classList.remove('active');
-                navLinks.classList.remove('active');
-            }
-        });
-
-        function openModal() {
-      document.getElementById("modal").style.display = "block";
-      document.getElementById("overlay").style.display = "block";
-    };
-    function closeModal() {
-      document.getElementById("modal").style.display = "none";
-      document.getElementById("overlay").style.display = "none";
-    }
-    </script>
 </body>
 </html>
