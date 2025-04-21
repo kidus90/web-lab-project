@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/style.css" rel="stylesheet">
-    <script src="Script/script.js" defer></script>
     <title>Portfolio</title>
 </head>
 <body>
@@ -27,38 +26,43 @@
         <p>I can help you build a product, feature or website Look through some of my work and
             experience! If you like what you see and have a project you need coded,
             don't hesitate to contact me.</p>
+        <div class="icons">
+            <a href=""><img src="img/icons/github_img.png" alt="GitHub"></a>
+            <a href=""><img src="img/icons/linkdn_img.png" alt="LinkedIn"></a>
+            <a href=""><img src="img/icons/peace_img.png" alt="Peace"></a>
+            <a href=""><img src="img/icons/twitter_img.png" alt="twitter"></a>
+            <a href=""><img src="img/icons/M_img.png" alt="M"></a>
+        </div>
+        <br><br><br>
         <div>
             <br>
             <button onclick="openModal()" id="V"><img src="img/Untitled.png"></button>
         </div>
-        </div>
+        
+    </div>
 
         <div class="overlay" id="overlay"></div>
         <div class="modal" id="modal">
             <div id="Close_button"><button onclick="closeModal()" id="X">X</button></div>
             <div class="modal_content">
-                <img src="img/home_detail.png" alt="img" id="home_detail_img">
+                <img src="img/home_detail.png" alt="img" style="width: 872px; height: 616px;">
                 <div style="display: flex; justify-content: space-between;">
-                    
                     <div>
                         <h1>Keeping track of hundreds of <br> components</h1>
                     </div>
-                    
                     <div>
                         <button class="About_button_resume">See live</button>
                         <button class="About_button_resume">See Source</button>
                     </div>
                 </div>
-                
-                <div style="display: flex; gap: 8px; border: none">
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">Codekit</p>
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">Github</p>
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">JavaScript</p>
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">Bootstrap</p>
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">Terminal</p>
-                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%; background-color: #EBECF0;border-radius: 8px;">Codepen</p>
+                <div style="display: flex; gap: 8px;">
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Codekit</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Github</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">JavaScript</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Bootstrap</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Terminal</p>
+                    <p style="display: flex; background: transparent; border: 1px solid black; padding: 1.2%;background-color: #EBECF0;border-radius: 8px;">Codepen</p>
                 </div>
-                
                 <div class="modal_text">
                     <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. 
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
@@ -67,7 +71,6 @@
                         Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, 
                         when an unknown printer took a galley of type and scrambled it 1960s with the relea</p>
                 </div>
-                
             </div>
         </div>
         
@@ -270,5 +273,35 @@
     </div>
     <br><br>
 </section>
+
+
+
+
+    <script>
+        const hamburger = document.querySelector('.hamburger');
+        const navLinks = document.querySelector('.nav-links');
+
+        hamburger.addEventListener('click', () => {
+            hamburger.classList.toggle('active');
+            navLinks.classList.toggle('active');
+        });
+
+        // Close menu when clicking outside on mobile
+        document.addEventListener('click', (e) => {
+            if (!hamburger.contains(e.target) && !navLinks.contains(e.target)) {
+                hamburger.classList.remove('active');
+                navLinks.classList.remove('active');
+            }
+        });
+
+        function openModal() {
+      document.getElementById("modal").style.display = "block";
+      document.getElementById("overlay").style.display = "block";
+    };
+    function closeModal() {
+      document.getElementById("modal").style.display = "none";
+      document.getElementById("overlay").style.display = "none";
+    }
+    </script>
 </body>
 </html>
