@@ -609,19 +609,34 @@
     width: 273px;
     height: 194px;
   }
+  .overlay { /* Hidden by default */
+    width: 50%;
+    height: 50%;
+    background-color: #c1c7d0;
+    background: rgba(0, 0, 0, 0.8);
+  }
+  .modal {
+    width: 95%;
+    height: auto;
+  }
+  #home_detail_img{
+    width: 300px; height: 200px;
+  }
 }
 .modal {
-  display: none; /* Hidden by default */
+  display: none;
   position: fixed;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 920px;
+  width: 90%; /* Adjust for smaller screens */
+  max-width: 920px;
   height: 100%;
   background-color: white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   padding: 20px;
   overflow: auto;
+
 }
 
 /* Style for the overlay */
