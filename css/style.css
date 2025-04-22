@@ -426,6 +426,7 @@
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
+  
   .contact_content_input_name input {
     width: 375px;
     height: 48px;
@@ -436,14 +437,6 @@
     flex-direction: column;
     justify-content: center;
     align-items: center;
-  }
-  .contact {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 369px;
-    height: 481px;
   }
   #Last_name {
     display: none;
