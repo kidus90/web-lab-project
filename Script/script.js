@@ -14,7 +14,7 @@ const hamburger = document.querySelector('.hamburger');
             }
         });
 
-        function openModal() {
+      function openModal() {
       document.getElementById("modal").style.display = "block";
       document.getElementById("overlay").style.display = "block";
     };
