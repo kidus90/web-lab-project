@@ -423,6 +423,18 @@
   width: 684px;
   height: 114px;
 }
+.GroupOfLists {
+  display: flex;
+  gap: 8px;
+}
+.listLabels {
+  display: flex;
+  background: transparent;
+  border: 1px solid black;
+  padding: 1.2%;
+  background-color: #EBECF0;
+  border-radius: 8px;
+}
 
 /* Mobile Styles */
 @media screen and (max-width: 768px) {
