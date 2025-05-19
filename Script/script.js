@@ -22,3 +22,6 @@ const hamburger = document.querySelector('.hamburger');
       document.getElementById("modal").style.display = "none";
       document.getElementById("overlay").style.display = "none";
     }
+    function submitted() {
+      alert("Your message has been sent successfully!");
+    }
