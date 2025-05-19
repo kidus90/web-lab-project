@@ -25,3 +25,6 @@ const hamburger = document.querySelector('.hamburger');
     function submitted() {
       alert("Your message has been sent successfully!");
     }
+    function getResume() {
+      alert("Your resume has been downloaded successfully!");
+    }
